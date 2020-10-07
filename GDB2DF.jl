@@ -31,6 +31,7 @@ cities = ArchGDAL.getlayer(gdb, 0)
 ## convert into Table
 tbl = ArchGDAL.Table(cities)
 @show typeof(tbl)
+;
 
 ## covert to DataFrame
 df = DataFrame(tbl)

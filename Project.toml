@@ -1,4 +1,5 @@
 [deps]
 ArchGDAL = "c9ce4bd3-c3d5-55b8-8973-c0e20141b8c3"
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+GeoArrays = "2fb1d81b-e6a0-5fc5-82e6-8e06903437ab"
 IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"

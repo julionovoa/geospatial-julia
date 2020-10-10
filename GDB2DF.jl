@@ -11,7 +11,7 @@ using DataFrames
 ## read a geodatabase
 gdb = ArchGDAL.read("data/natural_earth.gdb")
 
-## get some info
+## get some dataset info
 @show typeof(gdb)
 @show ArchGDAL.nlayer(gdb)
 @show ArchGDAL.getdriver(gdb)
@@ -23,7 +23,7 @@ end
 ## read layer cities
 cities = ArchGDAL.getlayer(gdb, 0)
 
-## get some info
+## get some layer info
 @show typeof(cities)
 @show ArchGDAL.nfeature(cities)
 ;
@@ -31,9 +31,10 @@ cities = ArchGDAL.getlayer(gdb, 0)
 ## convert into Table
 tbl = ArchGDAL.Table(cities)
 @show typeof(tbl)
+;
 
 ## covert to DataFrame
 df = DataFrame(tbl)
 
-## get some info
+## get some dataframe info
 describe(df)
